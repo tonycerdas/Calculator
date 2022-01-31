@@ -30,7 +30,7 @@ body {
 }
 
 .flex-items-f:nth-child(2) {
-    overflow: auto;
+    overflow-x: auto;
     margin: 1vw;
     min-width: 5%;
     min-height: 4.6vw;
