@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+
+<body>
+  <section class="container">
+    <div class="content">
+      <div class="flex-container-f">
+        <div class="flex-items-f hover C" onclick = "clearScreen()">C</div>
+        <div class="flex-items-f hover answer" id="screen"></div>
+      </div>
+      <div class="flex-container-s">
+        <div class="flex-items-s hover" onclick = "display('7')">7</div>
+        <div class="flex-items-s hover" onclick = "display('8')">8</div>
+        <div class="flex-items-s hover" onclick = "display('9')">9</div>
+        <div class="flex-items-s hover symbol" onclick = "display('+')">+</div>
+      </div>
+      <div class="flex-container-t">
+        <div class="flex-items-t hover" onclick = "display('4')">4</div>
+        <div class="flex-items-t hover" onclick = "display('5')">5</div>
+        <div class="flex-items-t hover" onclick = "display('6')">6</div>
+        <div class="flex-items-t hover symbol" value = "-" onclick = "display('-')">-</div>
+      </div>
+      <div class="flex-container-ft">
+        <div class="flex-items-ft hover" onclick = "display('1')">1</div>
+        <div class="flex-items-ft hover" onclick = "display('2')">2</div>
+        <div class="flex-items-ft hover"  onclick = "display('3')">3</div>
+        <div class="flex-items-ft hover symbol" onclick = "display('/')">÷</div>
+      </div>
+      <div class="flex-container-fv">
+        <div class="flex-items-fv hover" onclick = "display('0')">0</div>
+        <div class="flex-items-fv hover" onclick = "display('.')">.</div>
+        <div class="flex-items-fv hover equal" onclick = "calculate()">=</div>
+        <div class="flex-items-fv hover symbol" onclick = "display('*')">x</div>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
